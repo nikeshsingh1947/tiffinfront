@@ -19,16 +19,16 @@ const Footer = () => {
           <h3>Follow Us</h3>
           <div className="social-icons">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img className='iconImg' src={Instagram}/>
+              <img className='iconImg' src={Instagram} alt="instagram" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img className='iconImg' src={Twitter}/>
+              <img className='iconImg' src={Twitter} alt="Twitter" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img className='iconImg' src={Facebook}/>
+              <img className='iconImg' src={Facebook} alt="Facebook" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img className='iconImg' src={Youtube}/>
+              <img className='iconImg' src={Youtube} alt="Youtube" />
             </a>
            
           </div>

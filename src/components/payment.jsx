@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 
 export const Payment=()=>{
-    const [cardNumber, setCardNumber] = useState('');
-    const [expiryDate, setExpiryDate] = useState('');
-    const [cvv, setCVV] = useState('');
+   
   
    
     // const openRazorpay = () => {

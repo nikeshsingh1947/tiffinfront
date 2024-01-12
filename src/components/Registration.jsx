@@ -3,7 +3,7 @@ import { useState } from "react";
 // import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { useDispatch, useSelector } from "react-redux";
 import { Postuser } from "../Redux/AuthRedux/action";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Col, Button, Row, Container, Card, Form } from 'react-bootstrap';
 import Radhalogo from "../Logo 500x500PXL.jpg"
 export default function Registration() {
@@ -47,7 +47,7 @@ export default function Registration() {
             <Card className="px-4">
               <Card.Body>
                 <div className="mb-3 mt-md-4">
-                <img style={{"width":"50%","height":"100%","margin":"auto"}} src={Radhalogo}/>
+                <img style={{"width":"50%","height":"100%","margin":"auto"}} src={Radhalogo} alt="Logo" />
                   <div className="mb-3">
                     <Form>
                       <Form.Group className="mb-3" controlId="Name">

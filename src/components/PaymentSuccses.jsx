@@ -13,7 +13,7 @@ export const PaymentSuccess = () => {
             <Card.Body className="text-center">
               <Card.Title className="text-success">Payment Successful</Card.Title>
               <Card.Text>Thank you for your purchase. Your payment was successful.</Card.Text>
-              <img src="success-image.png" className="img-fluid mt-3" alt="Success Image" />
+              <img src="success-image.png" className="img-fluid mt-3" alt="SuccessImage" />
               <p className="mt-3">Transaction ID: <strong>{referenceNum}</strong></p>
               <Button href="/" variant="primary">Back to Home</Button>
             </Card.Body>

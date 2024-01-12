@@ -6,13 +6,12 @@ import {
     MDBCol,
     MDBContainer,
     MDBIcon,
-    MDBInput,
     MDBRow,
     MDBTypography,
     } from "mdb-react-ui-kit";
     import "./cart.css"
     import React, { useState } from "react";
-    import { useDispatch, useSelector } from "react-redux";
+    import {  useSelector } from "react-redux";
     import { useNavigate } from "react-router-dom";
     import axios from "axios";
     export const Cart=()=> {
@@ -20,7 +19,7 @@ import {
       const user = useSelector((store) => store.userData.user);
       const [cartitem,setCartitem]=useState(JSON.parse(localStorage.getItem("tiffincart")));
          console.log(user)
-         const [total,setTotal]=useState(0);
+        //  const [total,setTotal]=useState(0);
           const calculateTotal = () => {
               return cartitem.reduce((total, item) => total +( item.foodprice*item.quantity), 0);
 

@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react'
-import { data } from '../data/data.js'
+
 import { motion, AnimatePresence } from "framer-motion"
 import { Fetchdata } from "../Redux/action.jsx";
 import { useSelector, useDispatch } from 'react-redux';
@@ -29,20 +29,21 @@ const Food = () => {
       console.log(red)
     
 
-    const filterType = (category) => {
-        setFoods(
-            red.data.filter((item) => {
-                return item.category === category;
-            })
-        )
-    }
-    const filterPrice = (price) => {
-        setFoods(
-            red.data.filter((item) => {
-                return item.price === price;
-            })
-        )
-    }
+    // const filterType = (category) => {
+    //     console.log(Food)
+    //     setFoods(           
+    //         red.data.filter((item) => {
+    //             return item.category === category;
+    //         })
+    //     )
+    // }
+    // const filterPrice = (price) => {
+    //     setFoods(
+    //         red.data.filter((item) => {
+    //             return item.price === price;
+    //         })
+    //     )
+    // }
     const setlocal=(el)=>{
         console.log(el)
         localStorage.removeItem('prdc');

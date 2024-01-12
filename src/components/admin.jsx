@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import "./admin.css"
 import Radhalogo from "../Logo 500x500PXL.jpg"
-import { Adminlogin, Logoutreq, Postadmin } from '../Redux/adminredux/action';
+import { Adminlogin, Logoutreq } from '../Redux/adminredux/action';
 export const Admin=()=>{
     const navigate = useNavigate();
     const red = useSelector((store) => store.orderData.pictures);
@@ -17,7 +17,7 @@ export const Admin=()=>{
   // const status=true
   const [num, setNum] = useState(0);
     const [input, setInput] = useState('')
-    const [wrigth,setWright]=useState(0);
+    // const [wrigth,setWright]=useState(0);
     const [pass,setPass]=useState("");
     const handleInputChange = (e) => setInput(e.target.value)
     useEffect(() => {
@@ -144,7 +144,7 @@ const check=()=>{
               <Card.Body>
                 <div className="mb-3 mt-md-4">
                 <h2>ADMIN PAGE</h2>
-                <img style={{"width":"50%","height":"100%","margin":"auto"}} src={Radhalogo}/>
+                <img style={{"width":"50%","height":"100%","margin":"auto"}} src={Radhalogo} alt="Logo" />
                   <div className="mb-3">
                     <Form>
                       <Form.Group className="mb-3" controlId="formBasicEmail">

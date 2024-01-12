@@ -1,11 +1,9 @@
 import React from 'react'
-import { FiSearch } from 'react-icons/fi';
 import { useDispatch, useSelector } from "react-redux";
 import { Logoutreq } from "../Redux/AuthRedux/action";
 import Radhalogo from ".././withoutbg-removebg-preview.png"
 import Banner from "./banner.gif"
 import "./Navbar.css"
-import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import CartButton from './Cartbutton';
 const Navbar = () => {
@@ -25,7 +23,7 @@ const Navbar = () => {
         < >
         <div id="main-nav-cont">
         <div id='top-banner'>
-            <img src={Banner}/>
+            <img src={Banner} alt="banner" />
         </div>
         <div id='loginouter'>
         <CartButton onClick={"/cart"}/>
@@ -33,7 +31,7 @@ const Navbar = () => {
         </div >
             <div style={{"width":"25%","height":"40%"}} id='logoouter' className="flex max-w-[1240px] mx-auto items-center p-4 justify-between">
                 
-                   <img style={{"width":"100%","height":"100%"}} src={Radhalogo}/>
+                   <img style={{"width":"100%","height":"100%"}} src={Radhalogo} alt="Logo" />
                     
             </div>
             </div>

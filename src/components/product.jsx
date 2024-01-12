@@ -83,7 +83,7 @@ export const Product=()=>{
         <div id="main-cont">
           <h1 id="heading-main">Product</h1>
           <div id="prod-cont">
-            <div id="prod-image-cont"><img src={productdta.foodimage}/></div>
+            <div id="prod-image-cont"><img src={productdta.foodimage} alt="foodimage" /></div>
             <div id="prod-detail-cont">
              <h3 id="prod-name">{productdta.foodname}</h3>
              <p> Item : {productdta.item}</p>

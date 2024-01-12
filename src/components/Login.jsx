@@ -4,7 +4,7 @@ import { Col, Button, Row, Container, Card, Form } from 'react-bootstrap';
 import Radhalogo from "../Logo 500x500PXL.jpg"
 import { useDispatch, useSelector } from "react-redux";
 import { Postlogin } from "../Redux/AuthRedux/action";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function Login() {
   const error=useSelector((store)=>store.userData.error)
   const dispatch = useDispatch();
@@ -41,7 +41,7 @@ export default function Login() {
             <Card className="px-4">
               <Card.Body>
                 <div className="mb-3 mt-md-4">
-                <img style={{"width":"50%","height":"100%","margin":"auto"}} src={Radhalogo}/>
+                <img style={{"width":"50%","height":"100%","margin":"auto"}} src={Radhalogo} alt="Logo" />
                   <div className="mb-3">
                     <Form>
                       <Form.Group className="mb-3" controlId="formBasicEmail">
