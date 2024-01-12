@@ -29,7 +29,7 @@ export default function Registration() {
       mobileNumber:mobile,
       password:pass}))
       
-    if(user.token==undefined){
+    if(user.token===undefined){
       setUserdet(user)
       console.log(userdet)
        alert("something went wrong try again using diffrent Email")  

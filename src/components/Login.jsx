@@ -19,7 +19,7 @@ export default function Login() {
  const user=useSelector((store)=>store.userData.user)
  const check=()=>{
   console.log(user.token)
-  if(user.token!=undefined){
+  if(user.token!==undefined){
       
     alert("login Success")
     navigate("/",{replace:true})
@@ -27,7 +27,7 @@ export default function Login() {
  }
  else{
     
-    if(error==undefined||error!=""){
+    if(error===undefined||error!==""){
       alert("entered email or password is wrong")
     }
     }

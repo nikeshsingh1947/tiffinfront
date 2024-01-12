@@ -13,7 +13,7 @@ export const Product=()=>{
 
   }
   const quantfuncmin=()=>{
-    if(quant==1){
+    if(quant===1){
       return
     }
     else{
@@ -28,7 +28,8 @@ export const Product=()=>{
     const end = new Date(start);
     end.setDate(end.getDate() + 30);
     setEndDate(end.toISOString().split('T')[0]); 
-    if(productdta._id=="657c2637e57bf10b8b528a30"||productdta._id=="657c2f72e57bf10b8b528a34"||productdta._id=="657c2fefe57bf10b8b528a36"){
+    console.log(endDate)
+    if(productdta._id==="657c2637e57bf10b8b528a30"||productdta._id==="657c2f72e57bf10b8b528a34"||productdta._id==="657c2fefe57bf10b8b528a36"){
       const updated={
         ...productdta,
         quantity:quant,

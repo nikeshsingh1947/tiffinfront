@@ -25,7 +25,7 @@ const Food = () => {
           
         }
     
-      },[num]);    
+      },[num,red.length,dispatch]);    
       console.log(red)
     
 

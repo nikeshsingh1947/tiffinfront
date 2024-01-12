@@ -30,7 +30,7 @@ export const Admin=()=>{
           dispatch(Fetchorder()); 
           console.log(red)
         }
-})
+},[red, num, dispatch])
 
 const handleSubmit=()=>{   
   dispatch(Adminlogin({email:input,password:pass})) 
@@ -67,7 +67,7 @@ const nextdispatch=()=>{
 const check=()=>{
   nextdispatch()
   console.log(admin.token)
-    if(admin.token!=undefined){
+    if(admin.token!==undefined){
         
       alert("login Success")
     
@@ -75,7 +75,7 @@ const check=()=>{
   }
   else{
       
-      if(error==undefined||error!=""){
+      if(error===undefined||error!==""){
         alert("entered email or password is wrong")
       }
       }
