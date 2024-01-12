@@ -4,7 +4,7 @@ import "./product.css"
 
 export const Product=()=>{
   const navigate = useNavigate();
-  const [productdta,setProductdta]=useState(JSON.parse(localStorage.getItem("prdc")));
+  const [productdta]=useState(JSON.parse(localStorage.getItem("prdc")));
   const [quant,setQuant]=useState(1);
   const today = new Date().toISOString().split('T')[0];
   const [endDate, setEndDate] = useState(null);
