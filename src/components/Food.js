@@ -10,22 +10,22 @@ const Food = () => {
     const dispatch = useDispatch();
     const [num, setNum] = useState(0);
     const [loading, setLoading] = useState(true);
-    const [foods, setFoods] = useState(red.data);
+    
     useEffect(() => {
         if (red.length === 0) {
           dispatch(Fetchdata());
           setLoading(false);
-          setFoods(red.data)
+         
         }
         if (num === 0) {
           dispatch(Fetchdata());
           setNum((num) => num + 1);
-          setFoods(red.data)
+          
           setLoading(false);
-          setFoods(red.data)
+          
         }
     
-      });
+      },[num]);    
       console.log(red)
     
 
