@@ -22,7 +22,6 @@ import {
         //  const [total,setTotal]=useState(0);
           const calculateTotal = () => {
               return cartitem.reduce((total, item) => total +( item.foodprice*item.quantity), 0);
-
            };
   const calccheckout=(el)=>{
    
