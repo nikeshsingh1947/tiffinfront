@@ -24,7 +24,5 @@ export const AllRoutes=()=>{
         <Route path="/terms&condition" element={<TermsAndConditions/>}></Route>
         <Route path="/paymentsuccess" element={<PaymentSuccess/>} />
        </Routes>
-
-     
     )
 }
